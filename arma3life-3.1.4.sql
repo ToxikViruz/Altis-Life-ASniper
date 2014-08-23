@@ -21,12 +21,12 @@ DELIMITER $$
 --
 CREATE DEFINER=`arma3`@`localhost` PROCEDURE `resetLifeVehicles`()
 BEGIN
-	UPDATE vehicles SET `active`= 0;
+  UPDATE vehicles SET `active`= 0;
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteDeadVehicles`()
 BEGIN
-	DELETE FROM `vehicles` WHERE `alive` = 0;
+  DELETE FROM `vehicles` WHERE `alive` = 0;
 END$$
 
 CREATE DEFINER=`root`@`localhost` PROCEDURE `deleteOldHouses`()
@@ -49,23 +49,27 @@ CREATE TABLE IF NOT EXISTS `players` (
   `playerid` varchar(50) NOT NULL,
   `cash` int(100) NOT NULL DEFAULT '0',
   `bankacc` int(100) NOT NULL DEFAULT '0',
-  `coplevel` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0',
-  `cop_licenses` text,
   `civ_licenses` text,
+  `cop_licenses` text,
   `med_licenses` text,
+  `adac_licenses` text,
+  `civ_gear` text NOT NULL,
   `cop_gear` text NOT NULL,
+  `med_gear` TEXT NOT NULL,
+  `adac_gear` TEXT NOT NULL,
+  `coplevel` enum('0','1','2','3','4','5','6','7') NOT NULL DEFAULT '0',
   `mediclevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `arrested` tinyint(1) NOT NULL DEFAULT '0',
-  `aliases` text NOT NULL,
+  `adaclevel` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
   `adminlevel` enum('0','1','2','3') NOT NULL DEFAULT '0',
   `donatorlvl` enum('0','1','2','3','4','5') NOT NULL DEFAULT '0',
-  `civ_gear` text NOT NULL,
+  `arrested` tinyint(1) NOT NULL DEFAULT '0',
+  `aliases` text NOT NULL,
   `blacklist` tinyint(1) NOT NULL DEFAULT '0',
   PRIMARY KEY (`uid`),
   UNIQUE KEY `playerid` (`playerid`),
   KEY `name` (`name`),
   KEY `blacklist` (`blacklist`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=12 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
 
 -- --------------------------------------------------------
 
@@ -88,7 +92,7 @@ CREATE TABLE IF NOT EXISTS `vehicles` (
   KEY `side` (`side`),
   KEY `pid` (`pid`),
   KEY `type` (`type`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=2 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 ;
 
 -- --------------------------------------------------------
 
@@ -105,7 +109,7 @@ CREATE TABLE IF NOT EXISTS `houses` (
   `containers` text,
   `owned` tinyint(4) DEFAULT '0',
   PRIMARY KEY (`id`,`pid`)
-) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 ;
 
 -- --------------------------------------------------------
 

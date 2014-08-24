@@ -25,6 +25,8 @@ switch (_vehicle) do
 			case 6: {_color = "Black"};
 			case 7: {_color = "Black"};
 			case 8: {_color = "Taxi"};
+			case 9: {_color = "Cop"};
+			case 10: {_color = "Medic"};			
 		};
 	};
 	
@@ -65,7 +67,8 @@ switch (_vehicle) do
 			case 1: {_color = "Black";};
 			case 2: {_color = "Silver";};
 			case 3: {_color = "Orange";};
-			case 4: {_color = "Cop";};
+			case 4: {_color = "Cop (Black)";};
+			case 5: {_color = "Highway Patrol";};
 		};
 	};
 	
@@ -130,7 +133,8 @@ switch (_vehicle) do
 			case 11: {_color = "Vrana"};
 			case 12: {_color = "Waves Blue"};
 			case 13: {_color = "Rebel Digital"};
-			case 14: {_color = "EMS White"};
+			case 14: {_color = "EMS"};
+			case 14: {_color = "Cop"};
 		};
 	};
 	
@@ -142,7 +146,7 @@ switch (_vehicle) do
 			case 1: {_color = "White / Blue"};
 			case 2: {_color = "Digi Green"};
 			case 3: {_color = "Desert Digi"};
-			case 4: {_color = "EMS White"};
+			case 4: {_color = "EMS"};
 		};
 	};
 	

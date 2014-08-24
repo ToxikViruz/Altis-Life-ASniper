@@ -34,6 +34,7 @@ switch(_shop) do
 						["hgun_P07_F",nil,7500],
 						["HandGrenade_Stone","Flashbang",1700],
 						["Binocular",nil,150],
+						["RangeFinder",nil,2000],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
@@ -58,6 +59,7 @@ switch(_shop) do
 					[
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
+						["RangeFinder",nil,2000],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
@@ -205,6 +207,7 @@ switch(_shop) do
 		["Altis General Store",
 			[
 				["Binocular",nil,150],
+				["RangeFinder",nil,2000],
 				["ItemGPS",nil,100],
 				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],

@@ -39,6 +39,8 @@ switch (_item) do
 	case "ironore": {5};
 	case "copper_r": {3};
 	case "iron_r": {3};
+	case "silver": {6};
+	case "silver_r": {3};
 	case "sand": {3};
 	case "salt": {3};
 	case "salt_r": {1};

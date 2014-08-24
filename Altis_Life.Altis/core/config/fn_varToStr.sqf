@@ -39,6 +39,8 @@ switch (_var) do
 	case "life_inv_copperore": {(localize "STR_Item_CopperOre")};
 	case "life_inv_ironore": {(localize "STR_Item_IronOre")};
 	case "life_inv_ironr": {(localize "STR_Item_IronIngot")};
+	case "life_inv_silver": {(localize "STR_Item_Silver")};
+	case "life_inv_silverr": {(localize "STR_Item_SilverIngot")};
 	case "life_inv_copperr": {(localize "STR_Item_CopperIngot")};
 	case "life_inv_sand": {(localize "STR_Item_Sand")};
 	case "life_inv_salt": {(localize "STR_Item_Salt")};
@@ -78,6 +80,7 @@ switch (_var) do
 	case "license_civ_diamond": {(localize "STR_License_Diamond")};
 	case "license_civ_copper": {(localize "STR_License_Copper")};
 	case "license_civ_iron": {(localize "STR_License_Iron")};
+	case "license_civ_silver": {(localize "STR_License_Silver")};
 	case "license_civ_sand": {(localize "STR_License_Sand")};
 	case "license_civ_salt": {(localize "STR_License_Salt")};
 	case "license_civ_coke": {(localize "STR_License_Cocaine")};

@@ -43,6 +43,8 @@ switch (_mode) do
 			case "copperore": {"life_inv_copperore"};
 			case "ironore": {"life_inv_ironore"};
 			case "iron_r": {"life_inv_ironr"};
+			case "silver": {"life_inv_silver"};
+			case "silver_r": {"life_inv_silverr"};
 			case "copper_r": {"life_inv_copperr"};
 			case "salt": {"life_inv_salt"};
 			case "salt_r": {"life_inv_saltr"};
@@ -99,6 +101,8 @@ switch (_mode) do
 			case "life_inv_copperore": {"copperore"};
 			case "life_inv_ironore": {"ironore"};
 			case "life_inv_ironr": {"iron_r"};
+			case "life_inv_silver": {"silver"};
+			case "life_inv_silverr": {"silver_r"};
 			case "life_inv_copperr": {"copper_r"};
 			case "life_inv_sand": {"sand"};
 			case "life_inv_salt": {"salt"};

@@ -3263,6 +3263,14 @@
 			<Italian>Lingotto di ferro</Italian>
 			<Portuguese>Barra de Ferro</Portuguese>
 		</Key>
+		<Key ID="STR_Item_Silver">
+			<Original>Silver Ore</Original>
+			<English>Silver Ore</English>
+		</Key>
+		<Key ID="STR_Item_SilverIngot">
+			<Original>Silver Ingot</Original>
+			<English>Silver Ingot</English>
+		</Key>
 		<Key ID="STR_Item_CopperIngot">
 			<Original>Copper Ingot</Original>
 			<English>Copper Ingot</English>
@@ -3544,6 +3552,10 @@
 			<French>Fonte du Fer</French>
 			<Italian>Processo Ferro</Italian>
 			<Portuguese>Processamento de Ferro</Portuguese>
+		</Key>
+		<Key ID="STR_License_Silver">
+			<Original>Silver Processing</Original>
+			<English>Silver Processing</English>
 		</Key>
 		<Key ID="STR_License_Sand">
 			<Original>Sand Processing</Original>
@@ -3932,6 +3944,10 @@
 			<French>Fonte de fer</French>
 			<Italian>Processando Ferro</Italian>
 			<Portuguese>Processando Ferro</Portuguese>
+		</Key>
+		<Key ID="STR_Process_Silver">
+			<Original>Processing Silver</Original>
+			<English>Processing Silver</English>
 		</Key>
 		<Key ID="STR_Process_Sand">
 			<Original>Processing Sand</Original>

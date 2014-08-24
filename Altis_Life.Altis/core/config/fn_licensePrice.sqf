@@ -31,6 +31,7 @@ switch (_type) do
 	case "cocaine": {30000};
 	case "sand": {14500};
 	case "iron": {9500};
+	case "silver": {30000}; //Silver license cost
 	case "copper": {8000};
 	case "cement": {6500};
 	case "mair": {15000};

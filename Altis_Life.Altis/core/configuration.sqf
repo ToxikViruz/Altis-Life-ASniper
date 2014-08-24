@@ -24,22 +24,22 @@ life_bail_paid = false;
 life_impound_inuse = false;
 life_action_inUse = false;
 life_spikestrip = ObjNull;
-life_respawn_timer = 2; //Scaled in minutes
+life_respawn_timer = .5; //Scaled in minutes
 life_knockout = false;
 life_interrupted = false;
 life_respawned = false;
 life_removeWanted = false;
 
 //Persistent Saving
-__CONST__(life_save_civ,FALSE); //Save weapons for civs?
-__CONST__(life_save_yinv,FALSE); //Save Y-Inventory for civs and cops? (Medics excluded for now)
+__CONST__(life_save_civ, FALSE); //Save weapons for civs?
+__CONST__(life_save_yinv, TRUE); //Save Y-Inventory for civs and cops? (Medics excluded for now)
 
 //Revive constant variables.
 __CONST__(life_revive_cops,TRUE); //Set to false if you don't want cops to be able to revive downed players.
-__CONST__(life_revive_fee,250); //Fee for players to pay when revived.
+__CONST__(life_revive_fee,7000); //Fee for players to pay when revived.
 
 //House Limit
-__CONST__(life_houseLimit,5); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
+__CONST__(life_houseLimit,6); //Maximum amount of houses a player can buy (TODO: Make Tiered licenses).
 
 //Gang related stuff?
 __CONST__(life_gangPrice,75000); //Price for creating a gang (They're all persistent so keep it high to avoid 345345345 gangs).
@@ -74,9 +74,9 @@ life_thirst = 100;
 life_hunger = 100;
 __CONST__(life_paycheck_period,5); //Five minutes
 life_cash = 0;
-__CONST__(life_impound_car,350);
-__CONST__(life_impound_boat,250);
-__CONST__(life_impound_air,850);
+__CONST__(life_impound_car,400);
+__CONST__(life_impound_boat,450);
+__CONST__(life_impound_air,900);
 life_istazed = false;
 life_my_gang = ObjNull;
 
@@ -86,18 +86,18 @@ switch (playerSide) do
 {
 	case west: 
 	{
-		life_atmcash = 7000; //Starting Bank Money
-		life_paycheck = 500; //Paycheck Amount
+		life_atmcash = 175000; //Starting Bank Money
+		life_paycheck = 7500; //Paycheck Amount
 	};
 	case civilian: 
 	{
-		life_atmcash = 3000; //Starting Bank Money
-		life_paycheck = 350; //Paycheck Amount
+		life_atmcash = 150000; //Starting Bank Money
+		life_paycheck = 4000; //Paycheck Amount
 	};
 	
 	case independent: {
-		life_atmcash = 6500;
-		life_paycheck = 450;
+		life_atmcash = 150000;
+		life_paycheck = 6500;
 	};
 };
 
@@ -194,7 +194,7 @@ life_licenses =
 
 life_dp_points = ["dp_1","dp_2","dp_3","dp_4","dp_5","dp_6","dp_7","dp_8","dp_9","dp_10","dp_11","dp_12","dp_13","dp_14","dp_15","dp_15","dp_16","dp_17","dp_18","dp_19","dp_20","dp_21","dp_22","dp_23","dp_24","dp_25"];
 //[shortVar,reward]
-life_illegal_items = [["heroinu",1200],["heroinp",2500],["cocaine",1500],["cocainep",3500],["marijuana",2000],["turtle",3000],["blastingcharge",10000],["boltcutter",500]];
+life_illegal_items = [["heroinu",1200],["heroinp",5000],["cocaine",9000],["cocainep",9000],["marijuana",4200],["turtle",15000],["blastingcharge",10000],["boltcutter",500]];
 
 
 /*
@@ -218,14 +218,14 @@ sell_array =
 	["coffee",5],
 	["turtlesoup",1000],
 	["donuts",60],
-	["marijuana",2350],
+	["marijuana",4250],
 	["tbacon",25],
 	["lockpick",75],
 	["pickaxe",750],
 	["redgull",200],
 	["peach",55],
 	["cocaine",3000],
-	["cocainep",5000],
+	["cocainep",9000],
 	["diamond",750],
 	["diamondc",2000],
 	["iron_r",3200],
@@ -250,7 +250,7 @@ buy_array =
 	["mullet",300],
 	["catshark",350],
 	["water",10],
-	["turtle",4000],
+	["turtle",17000],
 	["turtlesoup",2500],
 	["donuts",120],
 	["coffee",10],

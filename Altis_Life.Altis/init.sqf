@@ -13,3 +13,9 @@ life_versionInfo = "Altis Life RPG v3.1.4.5";
 [] execVM "KRON_Strings.sqf";
 
 StartProgress = true;
+
+[] spawn
+{
+waitUntil {!isNil "mod_cruiseControl"};
+call mod_cruiseControl;
+};

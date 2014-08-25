@@ -40,6 +40,14 @@ class CfgFunctions
 class CfgSounds
 {
 	sounds[] = {};
+	
+	class zipper
+	{
+		name = "zipper";
+		sound[] = {"\sounds\zipper.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
 	class SirenLong
 	{
 		name = "SirenLong";
@@ -66,6 +74,24 @@ class CfgSounds
 		name = "flashbang";
 		sound[] = {"\sounds\flashbang.ogg", 1.0, 1};
 		titles[] = {};
+	};
+
+	class alarm_ramp {
+		name = "alarm_ramp";
+		sound[] = {"\sounds\alarm-ramp.ogg", 1, 1};
+		titles[] = {0, ""};
+	};
+	
+	class alarm_prepare {
+		name = "alarm_prepare";
+		sound[] = {"\sounds\alarm-prepare.ogg", 1, 1};
+		titles[] = {0, ""};
+	};
+	
+	class alarm_go {
+		name = "alarm_go";
+		sound[] = {"\sounds\alarm-go.ogg", 1, 1};
+		titles[] = {0, ""};
 	};
 };
 

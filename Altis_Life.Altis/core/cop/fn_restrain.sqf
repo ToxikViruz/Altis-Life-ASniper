@@ -31,6 +31,7 @@ if(isNull _cop) exitWith {};
 };
 
 titleText[format[localize "STR_Cop_Retrained",_cop getVariable["realname",name _cop]],"PLAIN"];
+player say3D "cuff"; 	//cuff sound
 				
 while {player getVariable "restrained"} do
 {

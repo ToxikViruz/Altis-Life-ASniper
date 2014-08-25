@@ -40,6 +40,14 @@ class CfgFunctions
 class CfgSounds
 {
 	sounds[] = {};
+	
+	class zipper
+	{
+		name = "zipper";
+		sound[] = {"\sounds\zipper.ogg", 1.0, 1};
+		titles[] = {};
+	};
+
 	class SirenLong
 	{
 		name = "SirenLong";

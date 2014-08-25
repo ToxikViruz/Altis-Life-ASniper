@@ -21,3 +21,4 @@ StartProgress = true;
 };
 
 [] execVM "scripts\usableCargoRamp\usableCargoRamp.sqf";
+[] execVM "scripts\zlt_fastrope.sqf";

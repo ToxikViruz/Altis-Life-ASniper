@@ -16,6 +16,8 @@ StartProgress = true;
 
 [] spawn
 {
-waitUntil {!isNil "mod_cruiseControl"};
-call mod_cruiseControl;
+	waitUntil {!isNil "mod_cruiseControl"};
+	call mod_cruiseControl;
 };
+
+[] execVM "scripts\usableCargoRamp\usableCargoRamp.sqf";

@@ -455,7 +455,7 @@ class Life_RscCheckbox {
 	color[] = {0, 0, 0, 0};
 	colorBackground[] = {0, 0, 1, 1};
 	colorTextSelect[] = {0, 0.8, 0, 1};
-	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1};
+	colorSelectedBg[] = {0.27, 0.33, 0, 1};
 	colorSelect[] = {0, 0, 0, 1};
 	colorTextDisable[] = {0.4, 0.4, 0.4, 1};
 	colorDisable[] = {0.4, 0.4, 0.4, 1};
@@ -479,7 +479,7 @@ class Life_RscProgress
 	shadow = 2;
 	colorFrame[] = {0, 0, 0, 1};
 	colorBackground[] = {0,0,0,0.7};
-	colorBar[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
+	colorBar[] = {0.27, 0.33, 0, "(profilenamespace getvariable ['GUI_BCG_RGB_A',0.7])"};
 };
 
 class Life_RscListBox 
@@ -534,7 +534,7 @@ class Life_RscEdit {
 	colorText[] = {0.95, 0.95, 0.95, 1};
 	colorDisabled[] = {1, 1, 1, 0.25};
 	autocomplete = false;
-	colorSelection[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 1};
+	colorSelection[] = {0.27, 0.33, 0, 1};
 	canModify = 1;
 };
 
@@ -1081,7 +1081,7 @@ class Life_RscToolbox {
 	colorSelect[] = {0.95, 0.95, 0.95, 1};
 	colorTextDisable[] = {0.4, 0.4, 0.4, 1};
 	colorDisable[] = {0.4, 0.4, 0.4, 1};
-	colorSelectedBg[] = {"(profilenamespace getvariable ['GUI_BCG_RGB_R',0.3843])", "(profilenamespace getvariable ['GUI_BCG_RGB_G',0.7019])", "(profilenamespace getvariable ['GUI_BCG_RGB_B',0.8862])", 0.5};
+	colorSelectedBg[] = {0.27, 0.33, 0, 0.5};
 	font = "PuristaMedium";
 	sizeEx = "(			(			(			((safezoneW / safezoneH) min 1.2) / 1.2) / 25) * 0.8)";
 };

@@ -76,24 +76,6 @@ class CfgSounds
 		titles[] = {};
 	};
 
-	class alarm_ramp {
-		name = "alarm_ramp";
-		sound[] = {"\sounds\alarm-ramp.ogg", 1, 1};
-		titles[] = {0, ""};
-	};
-	
-	class alarm_prepare {
-		name = "alarm_prepare";
-		sound[] = {"\sounds\alarm-prepare.ogg", 1, 1};
-		titles[] = {0, ""};
-	};
-	
-	class alarm_go {
-		name = "alarm_go";
-		sound[] = {"\sounds\alarm-go.ogg", 1, 1};
-		titles[] = {0, ""};
-	};
-
 	class Cuff {
 		name = "cuff";
 		sound[] = {"\sounds\cuff.ogg", 0.95, 0.95};

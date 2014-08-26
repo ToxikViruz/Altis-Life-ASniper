@@ -20,5 +20,5 @@ StartProgress = true;
 	call mod_cruiseControl;
 };
 
-[] execVM "scripts\usableCargoRamp\usableCargoRamp.sqf";
+[] execVM "IgiLoad\IgiLoadInit.sqf";
 [] execVM "scripts\zlt_fastrope.sqf";

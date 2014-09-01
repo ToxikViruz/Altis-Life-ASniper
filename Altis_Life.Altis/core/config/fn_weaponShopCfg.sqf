@@ -41,6 +41,8 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,1000],
 						["NVGoggles",nil,2000],
+						["NVGoggles_INDEP",nil,2000],
+						["NVGoggles_OPFOR",nil,2000],
 						["16Rnd_9x21_Mag",nil,50],
 						["20Rnd_556x45_UW_mag","Taser Rifle Magazine",125]
 					]
@@ -64,6 +66,8 @@ switch(_shop) do
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
 						["NVGoggles",nil,1200],
+						["NVGoggles_INDEP",nil,2000],
+						["NVGoggles_OPFOR",nil,2000],
 						["B_FieldPack_ocamo",nil,3000]
 					]
 				];
@@ -212,6 +216,8 @@ switch(_shop) do
 				["ToolKit",nil,250],
 				["FirstAidKit",nil,150],
 				["NVGoggles",nil,2000],
+				["NVGoggles_INDEP",nil,2000],
+				["NVGoggles_OPFOR",nil,2000],
 				["Chemlight_red",nil,300],
 				["Chemlight_yellow",nil,300],
 				["Chemlight_green",nil,300],

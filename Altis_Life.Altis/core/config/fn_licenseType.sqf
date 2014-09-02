@@ -20,6 +20,7 @@ switch (_mode) do
 			case "boat": {_var = "license_civ_boat"}; //Boating license cost
 			case "pilot": {_var = "license_civ_air"}; //Pilot/air license cost
 			case "gun": {_var = "license_civ_gun"}; //Firearm/gun license cost
+			case "gun2": {_var = "license_civ_gun2"}; //Class 3 Firearm/gun license cost
 			case "dive": {_var = "license_civ_dive"}; //Diving license cost
 			case "oil": {_var = "license_civ_oil"}; //Oil processing license cost
 			case "cair": {_var = "license_cop_air"}; //Cop Pilot License cost
@@ -53,6 +54,7 @@ switch (_mode) do
 			case "license_civ_boat": {_var = "boat"}; //Boating license cost
 			case "license_civ_air": {_var = "pilot"}; //Pilot/air license cost
 			case "license_civ_gun": {_var = "gun"}; //Firearm/gun license cost
+			case "license_civ_gun2": {_var = "gun2"}; //Firearm/gun license cost
 			case "license_civ_dive": {_var = "dive"}; //Diving license cost
 			case "license_civ_oil": {_var = "oil"}; //Oil processing license cost
 			case "license_cop_air": {_var = "cair"}; //Cop Pilot License cost

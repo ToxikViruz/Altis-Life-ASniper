@@ -2136,8 +2136,8 @@
 			<Portuguese>Você não perdeu suas licenças de motorista por atropelamento.</Portuguese>
 		</Key>
 		<Key ID="STR_Civ_LicenseRemove_2">
-			<Original>You have lost your firearms license for manslaughter.</Original>
-			<English>You have lost your firearms license for manslaughter.</English>
+			<Original>You have lost your firearms license(s) for manslaughter.</Original>
+			<English>You have lost your firearms license(s) for manslaughter.</English>
 			<German>Du hast deinen Waffenschein wegen Mordes verloren.</German>
 			<French>Vous avez perdu votre permis d'armes à feu pour homicide involontaire.</French>
 			<Italian>Hai perso il tuo Porto d'Armi a causa di un omicidio</Italian>
@@ -3496,6 +3496,14 @@
 			<French>Permis de Port d'Arme</French>
 			<Italian>Porto d'Armi</Italian>
 			<Portuguese>Licença de Porte de Armas</Portuguese>
+		</Key>
+		<Key ID="STR_License_Firearm2">
+			<Original>Class 3 Firearm License</Original>
+			<English>Class 3 Firearm License</English>
+			<German>Klasse 3 Waffenschein</German>
+			<French>Classe d'arme à feu licence 3</French>
+			<Italian>Classe 3 Arma da fuoco licenza</Italian>
+			<Portuguese>Classe 3 armas de fogo License</Portuguese>
 		</Key>
 		<Key ID="STR_License_Swat">
 			<Original>SWAT License</Original>

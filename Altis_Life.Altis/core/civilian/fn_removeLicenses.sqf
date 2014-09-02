@@ -24,6 +24,7 @@ switch (_state) do
 	case 1:
 	{
 		license_civ_gun = false;
+		license_civ_gun2 = false;
 		license_civ_rebel = false;
 		license_civ_driver = false;
 	};
@@ -43,8 +44,9 @@ switch (_state) do
 	//Killing someone while owning a gun license
 	case 3:
 	{
-		if(license_civ_gun) then {
+		if(license_civ_gun || license_civ_gun2) then {
 			license_civ_gun = false;
+			license_civ_gun2 = false;
 			hint localize "STR_Civ_LicenseRemove_2";
 		};
 	};

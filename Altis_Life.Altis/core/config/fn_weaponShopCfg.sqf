@@ -27,14 +27,12 @@ switch(_shop) do
 			case (playerSide != west): {"You are not a cop!"};
 			default
 			{
-				["Altis Cop Shop",
+				["Cop Shop",
 					[
 						["arifle_sdar_F","Taser Rifle",20000],
 						["hgun_P07_snds_F","Stun Pistol",2000],
-						["hgun_P07_F",nil,7500],
 						["HandGrenade_Stone","Flashbang",1700],
-						["Binocular",nil,150],
-						["RangeFinder",nil,2000],
+						["Laserdesignator",nil,2000],
 						["ItemGPS",nil,100],
 						["ToolKit",nil,250],
 						["muzzle_snds_L",nil,650],
@@ -61,7 +59,7 @@ switch(_shop) do
 					[
 						["ItemGPS",nil,100],
 						["Binocular",nil,150],
-						["RangeFinder",nil,2000],
+						["Laserdesignator",nil,2000],
 						["ToolKit",nil,250],
 						["FirstAidKit",nil,150],
 						["Medikit",nil,500],
@@ -83,14 +81,10 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 2): {"You are not at a patrol officer rank!"};
 			default
 			{
-				["Altis Patrol Officer Shop",
+				["Patrol Officer Shop",
 					[
 						["arifle_MX_F",nil,35000],
-						["SMG_02_ACO_F",nil,30000],
-						["HandGrenade_Stone","Flashbang",1700],
-						["MineDetector",nil,1000],
 						["acc_flashlight",nil,750],
-						["optic_Holosight",nil,1200],
 						["optic_Arco",nil,2500],
 						["muzzle_snds_H",nil,2750],
 						["30Rnd_65x39_caseless_mag",nil,130],
@@ -109,23 +103,40 @@ switch(_shop) do
 			case (__GETC__(life_coplevel) < 3): {"You are not at a sergeant rank!"};
 			default
 			{
-				["Altis Sergeant Officer Shop",
+				["Sergeant Officer Shop",
 					[
-						["SMG_02_ACO_F",nil,15000],
-						["hgun_ACPC2_F",nil,17500],
-						["HandGrenade_Stone","Flashbang",1700],
 						["arifle_MXC_F",nil,30000],
+						["arifle_MX_GL_Black_F",nil,35000],
 						["optic_Arco",nil,2500],
-						["muzzle_snds_H",nil,2750],
-						["30Rnd_65x39_caseless_mag",nil,100],
-						["30Rnd_9x21_Mag",nil,60],
-						["9Rnd_45ACP_Mag",nil,200]
+						["3Rnd_SmokeRed_Grenade_shell",nil,500],
+						["3Rnd_SmokeBlue_Grenade_shell",nil,500],
+						["3Rnd_UGL_FlareRed_F",nil,500]
 					]
 				];
 			};
 		};
 	};
 	
+	case "cop_lieutenant":
+	{
+		switch(true) do
+		{
+			case (playerSide != west): {"You are not a cop!"};
+			case (__GETC__(life_coplevel) < 5): {"You are not at a lieutenant rank!"};
+			default
+			{
+				["Lieutenant Shop",
+					[
+						["arifle_MXM_Black_F",nil,45000],
+						["srifle_EBR_F",nil,50000],
+						["optic_Nightstalker",nil,3500],
+						["20Rnd_762x51_Mag",nil,3500]
+					]
+				];
+			};
+		};
+	};
+
 	case "rebel":
 	{
 		switch(true) do
@@ -144,7 +155,6 @@ switch(_shop) do
 						["optic_Holosight",nil,3600],
 						["acc_flashlight",nil,1000],
 						["optic_Hamr",nil,7500],
-						["30Rnd_9x21_Mag",nil,200],
 						["20Rnd_556x45_UW_mag",nil,125],
 						["30Rnd_556x45_Stanag",nil,300],
 						["10Rnd_762x51_Mag",nil,500],
@@ -163,17 +173,39 @@ switch(_shop) do
 			case (!license_civ_gun): {"You don't have a Firearms license!"};
 			default
 			{
-				["Billy Joe's Firearms",
+				["Billy Joe's Firearms Level 1",
 					[
 						["hgun_Rook40_F",nil,6500],
-						["hgun_Pistol_heavy_02_F",nil,9850],
+						["hgun_Pistol_heavy_01_F",nil,10000],
 						["hgun_ACPC2_F",nil,11500],
-						["hgun_PDW2000_F",nil,20000],
-						["optic_ACO_grn_smg",nil,2500],
-						["V_Rangemaster_belt",nil,4900],
 						["16Rnd_9x21_Mag",nil,25],
 						["9Rnd_45ACP_Mag",nil,45],
-						["6Rnd_45ACP_Cylinder",nil,50],
+						["11Rnd_45ACP_Mag",nil,75],
+						["optic_Aco",nil,150],
+						["optic_Aco_grn",nil,150]
+
+					]
+				];
+			};
+		};
+	};
+	
+	case "gun2":
+	{
+		switch(true) do
+		{
+			case (playerSide != civilian): {"You are not a civilian!"};
+			case (!license_civ_gun): {"You don't have a Firearms license!"};
+			default
+			{
+				["Billy Joe's Firearms Level 2",
+					[
+						["smg_01_F",nil,15000],
+						["smg_02_F",nil,15000],
+						["hgun_PDW2000_F",nil,15000],
+						["optic_Aco_smg",nil,250],
+						["optic_Aco_grn_smg",nil,250],
+						["30Rnd_45ACP_Mag_SMG_01",nil,75],
 						["30Rnd_9x21_Mag",nil,75]
 					]
 				];
@@ -191,11 +223,8 @@ switch(_shop) do
 				["Hideout Armament",
 					[
 						["hgun_Rook40_F",nil,1500],
-						["hgun_Pistol_heavy_02_F",nil,2500],
+						["hgun_Pistol_heavy_01_F",nil,2500],
 						["hgun_ACPC2_F",nil,4500],
-						["hgun_PDW2000_F",nil,9500],
-						["optic_ACO_grn_smg",nil,950],
-						["V_Rangemaster_belt",nil,1900],
 						["16Rnd_9x21_Mag",nil,25],
 						["9Rnd_45ACP_Mag",nil,45],
 						["6Rnd_45ACP_Cylinder",nil,50],
@@ -218,6 +247,21 @@ switch(_shop) do
 				["NVGoggles",nil,2000],
 				["NVGoggles_INDEP",nil,2000],
 				["NVGoggles_OPFOR",nil,2000],
+				["Chemlight_red",nil,300],
+				["Chemlight_yellow",nil,300],
+				["Chemlight_green",nil,300],
+				["Chemlight_blue",nil,300]
+			]
+		];
+	};
+
+	case "gasstation":
+	{
+		["Station Supply",
+			[
+				["Binocular",nil,300],
+				["ToolKit",nil,300],
+				["FirstAidKit",nil,200],
 				["Chemlight_red",nil,300],
 				["Chemlight_yellow",nil,300],
 				["Chemlight_green",nil,300],

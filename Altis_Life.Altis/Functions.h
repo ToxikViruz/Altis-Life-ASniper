@@ -26,7 +26,6 @@ class SpyGlass
 		class payLoad{};
 		class variableCheck{};
 		class initSpy {};
-		class autoSave {};
 	};
 };
 
@@ -221,6 +220,7 @@ class Life_Client_Core
 		class saveGear {};
 		class loadGear {};
 		class stripDownPlayer {};
+		class autoSave {};
 	};
 	
 	class Network
